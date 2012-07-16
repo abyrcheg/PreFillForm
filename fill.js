@@ -15,15 +15,15 @@ Fill.prototype.years = function(startYear, endYear) {
 
 Fill.prototype.monthsNames = function() {
     
-    return ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    return ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     
 }
 
 Fill.prototype.nums = function(startNum, endNum) {
     
-    startYear = startNum || 0;
+    var startNum = startNum || 0;
 
-    endNum = endNum || 30;
+    var endNum = endNum || 100;
 
     var fromNum = startNum
         , nums = []
