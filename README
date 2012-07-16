@@ -1,0 +1,13 @@
+var filler = new Fill();
+
+filler.addOptions(document.getElementById("count"), 
+                  filler.nums(1, 100))
+
+filler.addOptions(document.getElementById("birthYear"), 
+                  filler.years(1945))
+
+filler.addOptions(document.getElementById("birthMonth"), 
+                  filler.monthsNames(), "Jan")
+                        
+filler.addOptions(document.getElementById("birthDay"), 
+                  filler.nums(1, maxMonthsCount), 20)
